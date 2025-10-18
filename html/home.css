@@ -1,0 +1,577 @@
+@import "../src/Main.css";
+// CARDS
+.programs-container {
+  padding: 1rem;
+}
+.programs-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+}
+.programs-content {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--light-purple-background);
+  gap: 3rem;
+  font-weight: 200;
+  padding: 3rem 1rem;
+}
+.card .lucide {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hat {
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: transparent;
+}
+.hero-section h2 {
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+.programs-content h2 {
+  font-size: 2rem;
+}
+
+.programs-content p {
+  color: var(--gray-font-color);
+  font-size: 1.25rem;
+}
+.programs {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  justify-content: space-evenly;
+  padding: 20px;
+  gap: 2rem;
+}
+.card {
+  height: 200px;
+  width: clamp(300px, 80%, 400px);
+  border: 1px solid var(--border-color);
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.card li {
+  display: flex;
+  flex-shrink: none;
+  align-items: center;
+  gap: 10px;
+}
+
+.card ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+.card h4 {
+  font-weight: 600;
+}
+.card p {
+  color: var(--gray-font-color);
+  font-size: 1rem;
+  line-height: 1.4rem;
+}
+.lucide-star {
+  background-color: var(--text-main-purple);
+}
+.footer {
+  border-top: 1px solid var(--border-color);
+  background-color: #fafafa;
+  padding: 30px 20px 10px 20px;
+  border-top: 2px solid #eee;
+}
+.card span {
+  font-size: 0.8rem;
+  color: black;
+  font-weight: 400;
+}
+
+.success-stories {
+  width: 100vw;
+  padding-bottom: 5rem;
+  padding-top: 5rem;
+  background-color: var(--light-purple-background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 20px;
+}
+.accomplishments {
+  height: auto;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.success-stories h2 {
+  font-size: 2rem;
+}
+
+.success-stories p {
+  color: var(--gray-font-color);
+  font-size: 1.25rem;
+}
+
+.success-stories .card {
+  background-color: white;
+}
+.hat {
+  background-color: var(--light-purple-background);
+  height: 45px;
+  width: 45px;
+}
+
+.parent {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.parent p {
+  color: black;
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1rem;
+}
+
+.one-child {
+  color: black;
+}
+
+.card i {
+  color: var(--gray-font-color);
+  font-size: 0.95rem;
+}
+
+.success-parent {
+  display: flex;
+  gap: 1.7rem;
+}
+
+.read-more-button {
+  padding: 10px 15px;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  border: 1px solid var(--border-color);
+  transition: 0.5s ease;
+}
+
+.take-flight {
+  width: 100vw;
+  padding: 5rem 0;
+  display: flex;
+  background-color: var(--dark-purple-background);
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  gap: 1rem;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+  .nav-bar {
+    padding: 1rem;
+  }
+
+  .pages {
+    gap: 1rem;
+  }
+
+  .hero-section {
+    height: 60vh;
+  }
+
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-section h2 {
+    font-size: 1.2rem;
+  }
+
+  .accomp-cont {
+  }
+
+  .programs {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .success-parent {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .card-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .mobile-menu-toggle {
+    display: flex;
+  }
+  .pages {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .hero-section {
+    height: 50vh;
+    gap: 1.5rem;
+  }
+
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .hero-section h2 {
+    font-size: 1.1rem;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .accomplishments {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .programs-content {
+    padding: 3rem 1rem;
+  }
+
+  .programs-info {
+    gap: 0.5rem;
+  }
+
+  .programs-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .programs-content p {
+    font-size: 1.1rem;
+  }
+
+  .success-stories {
+    padding: 3rem 1rem;
+  }
+
+  .success-stories h2 {
+    font-size: 1.8rem;
+  }
+
+  .success-stories p {
+    font-size: 1.1rem;
+  }
+
+  .take-flight {
+    padding: 3rem 1rem;
+  }
+
+  .footer {
+    padding: 20px 15px 5px 15px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-bottom a {
+    margin: 5px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .nav-bar {
+    padding: 0.8rem;
+  }
+
+  .hero-section {
+    height: 40vh;
+    gap: 1rem;
+  }
+
+  .hero-section h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-section h2 {
+    font-size: 1rem;
+  }
+
+  .accomplishments {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .accomp-cont h2 {
+    font-size: 1.8rem;
+  }
+
+  .programs-content {
+    padding: 2rem 1rem;
+  }
+
+  .programs-content h2 {
+    font-size: 1.6rem;
+  }
+
+  .programs-content p {
+    font-size: 1rem;
+  }
+
+  .card {
+    padding: 15px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .card h4 {
+    font-size: 1.2rem;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+  }
+
+  .success-stories {
+    padding: 2rem 1rem;
+  }
+
+  .success-stories h2 {
+    font-size: 1.6rem;
+  }
+
+  .success-stories p {
+    font-size: 1rem;
+  }
+
+  .take-flight {
+    padding: 2rem 1rem;
+  }
+
+  .newsletter {
+    flex-direction: column;
+  }
+
+  .newsletter input {
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+
+  .newsletter button {
+    border-radius: 8px;
+  }
+}
+
+/* Additional responsive improvements */
+@media (max-width: 480px) {
+  .hero-section {
+    height: 35vh;
+    gap: 0.8rem;
+  }
+
+  .hero-section h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero-section h2 {
+    font-size: 0.9rem;
+  }
+
+  .hero-section p {
+    font-size: 0.8rem;
+  }
+
+  .buttons {
+    gap: 0.8rem;
+  }
+
+  .read-more-button {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+
+  .accomp-cont h2 {
+    font-size: 1.6rem;
+  }
+
+  .accomp-cont p {
+    font-size: 0.8rem;
+  }
+
+  .programs-content h2,
+  .success-stories h2 {
+    font-size: 1.4rem;
+  }
+
+  .programs-content p,
+  .success-stories p {
+    font-size: 0.9rem;
+  }
+
+  .card {
+    padding: 12px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .card h4 {
+    font-size: 1.1rem;
+  }
+
+  .card p {
+    font-size: 0.85rem;
+  }
+
+  .card ul {
+    gap: 0.4rem;
+    margin-top: 0.8rem;
+  }
+
+  .parent p {
+    font-size: 0.75rem;
+  }
+
+  .card i {
+    font-size: 0.85rem;
+  }
+
+  .take-flight {
+    padding: 1.5rem 1rem;
+  }
+
+  .footer-col h4 {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .footer-col p,
+  .footer-col ul li {
+    font-size: 12px;
+  }
+
+  .contact-info li {
+    font-size: 12px;
+  }
+
+  .social-icons a {
+    padding: 8px;
+    font-size: 14px;
+  }
+}
+
+/* Large screen improvements */
+@media (min-width: 1200px) {
+  .hero-section {
+    height: 80vh;
+  }
+
+  .hero-section h1 {
+    font-size: 3rem;
+  }
+
+  .hero-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .accomp-cont h2 {
+    font-size: 2.5rem;
+  }
+
+  .programs-content h2,
+  .success-stories h2 {
+    font-size: 2.5rem;
+  }
+
+  .card {
+    width: 550px;
+  }
+}
+
+/* Ultra small devices */
+@media (max-width: 320px) {
+  .nav-bar {
+    padding: 0.5rem;
+  }
+
+  .hero-section {
+    height: 30vh;
+  }
+
+  .hero-section h1 {
+    font-size: 1.4rem;
+  }
+
+  .hero-section h2 {
+    font-size: 0.8rem;
+  }
+
+  .buttons {
+    gap: 0.6rem;
+  }
+
+  .accomp-cont h2 {
+    font-size: 1.4rem;
+  }
+
+  .programs-content h2,
+  .success-stories h2 {
+    font-size: 1.3rem;
+  }
+
+  .card {
+    padding: 10px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .card h4 {
+    font-size: 1rem;
+  }
+}

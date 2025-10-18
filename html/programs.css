@@ -1,0 +1,109 @@
+@import "../src/Main.css";
+body {
+}
+
+.course-container {
+  width: 100%;
+  height: 80vh;
+  margin: 0 auto; /* centers the container on the page */
+  background-color: white;
+  padding: min(2rem, 3%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: start;
+  align-items: center;
+  line-height: 1.7rem;
+  gap: clamp(2rem, 5vw, 4rem););
+}
+
+.course-container img {
+  border-radius: 10px;
+  object-fit: cover;
+  width: 100%;
+  max-width: 772px;
+  min-width: 200px;
+  height: clamp( 20em, 30vw ,30em);
+  background-color: purple;
+}
+.course-container h1 {
+  font-size: clamp(2rem, 5vw, 4rem);
+  line-height: clamp(2.5rem, 6vw, 4.5rem);
+  text-align: start;
+}
+.course-container div {
+}
+.course-child {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: start; /* vertical alignment */
+  justify-items: start; /* horizontal alignment of all children */
+  gap: 2rem;
+  text-align: left;
+  height: auto;
+}
+
+.course-container h2 {
+  font-size: clamp(1.4rem, 3.5vw, 2.3rem);
+  line-height: 2rem;
+  font-weight: 400;
+  text-align: start;
+}
+
+.why-us {
+  display: flex;
+  flex: 1fr 1fr;
+  gap: clamp( 1em , 3vw ,5em);
+  padding: 0 1rem;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+.why-us h2 {
+  font-size: clamp(1.3rem, 3vw, 2rem);
+  line-height: 2rem;
+  font-weight: 400;
+  text-align: start;
+}
+.why-us ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  line-height: 1.3rem;
+  font-size: clamp(0.8rem, 1.3vw, 1.2rem);
+}
+
+@media (max-width: 516px){
+  .why-us{
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 3rem;
+  }
+}
+.come {
+  font-size: clamp(0.8rem, 2vw, 1.2rem);
+  text-align: start;
+  font-weight: 300;
+  line-height: 1rem;
+}
+
+.payment {
+  color: var(--gray-font-color);
+  font-weight: 300;
+  font-size: clamp(0.5rem, 2vw, 0.8rem);
+}
+
+@media (max-width: 916px){
+  .course-container{
+    grid-template-columns: 1fr;
+    height: auto;
+
+  }
+  .why-us{
+    align-items: start;
+    justify-content: start;
+    gap: 3rem;
+  }
+}
