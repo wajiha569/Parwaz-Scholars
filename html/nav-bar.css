@@ -1,0 +1,146 @@
+.nav-bar {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: var(--gray-font-color);
+  display: flex;
+  height: clamp(50px, 10vw, 60px);
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 20px;
+  z-index: 1000;
+}
+
+.parwaz-logo {
+  height: min(5rem, 100%);
+}
+
+/* Desktop center nav */
+.center-nav {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+.pages {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.page-link {
+  color: var(--gray-font-color);
+  text-decoration: none;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.page-link:hover {
+  transform: scale(1.05);
+  color: #606067;
+}
+
+/* Mobile toggle button */
+.mobile-menu-toggle {
+  display: none;
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  z-index: 1001;
+}
+
+.hamburger {
+  width: 25px;
+  height: 3px;
+  background-color: #2d2d2d;
+  margin: 3px 0;
+  border-radius: 2px;
+  /* add transition for smooth effect */
+  transition: transform 0.3s ease, opacity 0.3s ease, background-color 0.2s ease;
+}
+/* Toggle animation */
+.mobile-menu-toggle.active .hamburger:nth-child(1) {
+  transform: rotate(52deg) translate(6px, 6px);
+}
+
+.mobile-menu-toggle.active .hamburger:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-menu-toggle.active .hamburger:nth-child(3) {
+  transform: rotate(-52deg) translate(6px, -6px);
+}
+
+/* Mobile menu (hidden by default) */
+@media (max-width: 1202px) {
+  .center-nav {
+    display: none !important; /* force override desktop */
+    position: fixed;
+    top: 0;
+    right: -250px; /* start hidden off-screen */
+    height: 100%;
+    width: 250px;
+    background: var(--white-background-color);
+    flex-direction: column;
+    padding: 4rem 2rem;
+    gap: 3rem;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 1000;
+  }
+
+  .center-nav.show {
+    display: flex !important; /* bring it back */
+    right: 0;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .pages {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .mobile-menu-toggle {
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .center-nav {
+    position: fixed;
+    top: 0;
+    right: -250px; /* same fix here */
+    height: 100%;
+    width: 250px;
+    background: var(--white-background-color);
+    flex-direction: column;
+    padding: 4rem 2rem;
+    gap: 3rem;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+    pointer-events: none; /* prevent clicking when hidden */
+  }
+
+  .center-nav.show {
+    right: 0;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .pages {
+    flex-direction: column;
+    gap: 2.3rem;
+  }
+  .page-link:hover {
+    transform: scale(1.05);
+    color: #606067;
+  }
+  .mobile-menu-toggle {
+    display: flex;
+  }
+}

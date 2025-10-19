@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="FAQ.css">
+  <link rel="stylesheet" href="../src/Main.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="nav-bar.css">
+  <link rel="stylesheet" href="responsive-design.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <title>FAQ's</title>
+  </head>
+  <body>
+    <!--NAVBAR-->
+    <nav class="nav-bar" role="navigation" aria-label="Main navigation">
+      <img 
+        src="../images/parwaz-logo1.png" 
+        alt="Parwaz Scholars Logo" 
+        class="parwaz-logo" 
+        onerror="this.style.display='none';"
+      />
+    
+      <button 
+        class="mobile-menu-toggle" 
+        id="menuToggle"
+        aria-expanded="false" 
+        aria-controls="mobile-menu" 
+        aria-label="Toggle navigation menu"
+      >
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+      </button>
+    
+      <div class="center-nav" id="mobile-menu">
+        <div class="pages">
+          <a href="home.html" class="page-link" aria-current="page">Home</a>
+          <a href="about-us.html" class="page-link">About Us</a>
+          <a href="programs.html" class="page-link">Programs</a>
+          <a href="apply-now.html" class="page-link">Apply Now</a>
+          <a href="success-stories.html" class="page-link">Success Stories</a>
+          <a href="resources.html" class="page-link">Resources</a>
+          <a href="news-events.html" class="page-link">News & Events</a>
+          <a href="get-involved.html" class="page-link">Get Involved</a>
+          <a href="contact.html" class="page-link">Contact Us</a>
+          <a href="FAQ.html" class="page-link">FAQs</a>
+        </div>
+      </div>
+    </nav>
+
+    <section class="faq-container">
+      <h2>Frequently Asked Questions</h2>
+      <p class="subtitle">Find answers to common questions below.</p>
+    
+      <div class="faq-item">
+        <button class="faq-question">
+          How do I apply for the scholarship?
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>You can apply by filling out the Google Form linked on our "Apply Now" page. Make sure you provide accurate details and upload all required documents.</p>
+        </div>
+      </div>
+    
+      <div class="faq-item">
+        <button class="faq-question">
+          Is there an entry test for applicants?
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes. Shortlisted candidates are invited to take an entry test as part of the selection process. This helps us ensure fairness and transparency in evaluations.</p>
+        </div>
+      </div>
+    
+      <div class="faq-item">
+        <button class="faq-question">
+          What are the eligibility criteria?
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Applicants must be currently enrolled students and demonstrate both academic potential and financial need. Specific requirements are listed on the application form.</p>
+        </div>
+      </div>
+    
+      <div class="faq-item">
+        <button class="faq-question">
+          When will I know the results of my application?
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Results are usually announced 4–6 weeks after the application deadline. Successful candidates will be contacted via email.</p>
+        </div>
+      </div>
+    
+      <div class="faq-item">
+        <button class="faq-question">
+          Can I apply if I am already receiving another scholarship?
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes, you may apply. However, you must disclose any other scholarships you are receiving during the application process.</p>
+        </div>
+      </div>
+    
+      <div class="faq-item">
+        <button class="faq-question">
+          How do I join the Parwaaz Scholars community?
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Simply click on "Join Our Group" on the homepage. You’ll be redirected to our online community form where you can sign up.</p>
+        </div>
+      </div>
+    
+      <div class="faq-item">
+        <button class="faq-question">
+          Can I volunteer with Parwaaz Scholars?
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Absolutely! We welcome volunteers for mentorship, community events, and awareness campaigns. Check our "Get Involved" page for opportunities.</p>
+        </div>
+      </div>
+    
+      <div class="faq-item">
+        <button class="faq-question">
+          Who can I contact if I have more questions?
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>You can email us at <strong>info@parwaazscholars.org</strong> or call during office hours. Details are available on the "Contact Us" page.</p>
+        </div>
+      </div>
+    </section>
+    
+    <script>
+      // Simple accordion toggle
+      const faqItems = document.querySelectorAll(".faq-item");
+    
+      faqItems.forEach(item => {
+        const question = item.querySelector(".faq-question");
+    
+        question.addEventListener("click", () => {
+          item.classList.toggle("active");
+        });
+      });
+    </script>
+    
+
+    <footer class="footer">
+      <div class="footer-container">
+    
+        <!-- Left Column -->
+        <div class="footer-col about">
+          <img src="../images/parwaz-logo1.png" alt="Logo" class="logo" />
+          <p>
+            Empowering exceptional students to soar to new heights through comprehensive 
+            educational scholarships, mentorship, and opportunities.
+          </p>
+          <ul class="contact-info">
+            <li>
+              <i class="fa-solid fa-envelope footer-logo"></i>
+              parwaazscholars@gmail.com
+            </li>
+            <li>
+              <i class="fa-solid fa-phone footer-logo"></i>
+              +92 334-9865396
+            </li>
+            <li>
+              <i class="fa-solid fa-phone footer-logo"></i>
+              +92 333-3255814
+            </li>
+            <li>
+              <i class="fa-solid fa-location-dot footer-logo"></i>
+              Quetta Alamdar Road
+            </li>
+          </ul>
+        </div>
+    
+        <!-- Middle Column -->
+        <div class="footer-col links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="apply-now.html">Apply Now</a></li>
+            <li><a href="success-stories.html">Success Stories</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="news-events.html">News & Events</a></li>
+          </ul>
+        </div>
+    
+        <!-- Support Column -->
+        <div class="footer-col links">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Get Involved</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Accessibility</a></li>
+          </ul>
+        </div>
+    
+        <!-- Right Column -->
+        <div class="footer-col subscribe">
+          <h4>Stay Connected</h4>
+          <p>Join our instagram family to get more updates.</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/share/199ymmrJHq/?mibextid=wwXIfr">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/parwaaz_scholars?igsh=OGtsYmNzYTNwZGE3">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/pakhazara/">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+    
+      </div>
+      
+      <div class="footer-bottom">
+        <p>© 2024 Parwaaz Scholars. All rights reserved.</p>
+        <div class="bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </footer>
+    
+    
+    <script type="text/babel" data-type="module" src="../src/Main.jsx"></script>
+    <script>
+      // Mobile menu toggle functionality
+      document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.querySelector('.mobile-menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuToggle.addEventListener('click', function() {
+          const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+          menuToggle.setAttribute('aria-expanded', !isExpanded);
+          menuToggle.classList.toggle('active');
+          mobileMenu.classList.toggle('show');
+        });
+        
+        // Close mobile menu when clicking on a link
+        const menuLinks = document.querySelectorAll('.page-link');
+        menuLinks.forEach(link => {
+          link.addEventListener('click', function() {
+            menuToggle.setAttribute('aria-expanded', 'false');
+            menuToggle.classList.remove('active');
+            mobileMenu.classList.remove('show');
+          });
+        });
+      });
+  
+    </script>
+  </body>
+</html>
