@@ -1,4 +1,4 @@
-@import url("../src/Main.css");
+@import url("./Main.css");
 
 .about {
   background-color: var(--light-purple-background);

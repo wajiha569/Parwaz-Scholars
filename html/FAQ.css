@@ -1,4 +1,4 @@
-@import "../src/Main.css";
+@import "./Main.css";
 /* FAQ Section */
 .faq-container {
   max-width: 800px;
