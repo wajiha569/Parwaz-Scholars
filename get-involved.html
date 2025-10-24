@@ -3,92 +3,94 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="home.css">
-  <link rel="stylesheet" href="apply-now.css">
-  <link rel="stylesheet" href="./Main.css">
-  <link rel="stylesheet" href="footer.css">
-  <link rel="stylesheet" href="nav-bar.css">
-  <link rel="stylesheet" href="responsive-design.css">
+  <link rel="stylesheet" href="/styles/home.css">
+  <link rel="stylesheet" href="/styles/get-involved.css">
+  <link rel="stylesheet" href="/styles/Main.css">
+  <link rel="stylesheet" href="/styles/footer.css">
+  <link rel="stylesheet" href="/styles/nav-bar.css">
+  <link rel="stylesheet" href="/styles/responsive-design.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-  <title>Apply Now</title>
+  <title>Get involved</title>
 </head>
 <body>
-    <!--NAVBAR-->
-      <nav class="nav-bar" role="navigation" aria-label="Main navigation">
-        <img 
-          src="/images/parwaz-logo1.png" 
-          alt="Parwaz Scholars Logo" 
-          class="parwaz-logo" 
-          onerror="this.style.display='none';"
-        />
-      
-        <button 
-          class="mobile-menu-toggle" 
-          id="menuToggle"
-          aria-expanded="false" 
-          aria-controls="mobile-menu" 
-          aria-label="Toggle navigation menu"
-        >
-          <span class="hamburger"></span>
-          <span class="hamburger"></span>
-          <span class="hamburger"></span>
-        </button>
-      
-        <div class="center-nav" id="mobile-menu">
-          <div class="pages">
-            <a href="index.html" class="page-link" aria-current="page">Home</a>
-            <a href="about-us.html" class="page-link">About Us</a>
-            <a href="programs.html" class="page-link">Programs</a>
-            <a href="apply-now.html" class="page-link">Apply Now</a>
-            <a href="success-stories.html" class="page-link">Success Stories</a>
-            <a href="resources.html" class="page-link">Resources</a>
-            <a href="news-events.html" class="page-link">News & Events</a>
-            <a href="get-involved.html" class="page-link">Get Involved</a>
-            <a href="contact.html" class="page-link">Contact Us</a>
-            <a href="FAQ.html" class="page-link">FAQs</a>
-          </div>
-        </div>
-      </nav>
+  <!--NAVBAR-->
+  <nav class="nav-bar" role="navigation" aria-label="Main navigation">
+    <img 
+      src="/images/parwaz-logo1.png" 
+      alt="Parwaz Scholars Logo" 
+      class="parwaz-logo" 
+      onerror="this.style.display='none';"
+    />
+  
+    <button 
+      class="mobile-menu-toggle" 
+      id="menuToggle"
+      aria-expanded="false" 
+      aria-controls="mobile-menu" 
+      aria-label="Toggle navigation menu"
+    >
+      <span class="hamburger"></span>
+      <span class="hamburger"></span>
+      <span class="hamburger"></span>
+    </button>
+  
+    <div class="center-nav" id="mobile-menu">
+      <div class="pages">
+        <a href="index.html" class="page-link" aria-current="page">Home</a>
+        <a href="about-us.html" class="page-link">About Us</a>
+        <a href="programs.html" class="page-link">Programs</a>
+        <a href="apply-now.html" class="page-link">Apply Now</a>
+        <a href="success-stories.html" class="page-link">Success Stories</a>
+        <a href="resources.html" class="page-link">Resources</a>
+        <a href="news-events.html" class="page-link">News & Events</a>
+        <a href="get-involved.html" class="page-link">Get Involved</a>
+        <a href="contact.html" class="page-link">Contact Us</a>
+        <a href="FAQ.html" class="page-link">FAQs</a>
+      </div>
+    </div>
+  </nav>
 
-      <section class="apply-hero">
-        <div class="apply-container">
-          
-          <!-- Left: Entry Test -->
-          <div class="apply-card">
-            <img src="/images/entry-test.png" alt="Entry Test" class="card-img">
-            <h2>Apply for Entry Test</h2>
-            <p>
-              Ready to prove your skills? Register now for our entry test and take the first step toward your journey.
-            </p>
-            <a 
-              href="https://docs.google.com/forms/your-entry-test-form"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button class="apply-now">Apply Now</button>
-            </a>
-          </div>
-          
-          <!-- Right: Join Group -->
-          <div class="apply-card">
-            <img src="/images/social.png" alt="Join Group" class="card-img">
-            <h2>Join Our Group</h2>
-            <p>
-              Connect with peers, share resources, and stay updated by joining our exclusive student community.
-            </p>
-            <a 
-              href="https://chat.whatsapp.com/your-group-link"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button class="apply-now secondary">Join Group</button>
-            </a>
-          </div>
-          
-        </div>
-      </section>
-      
-      
+  <section class="get-involved">
+    <div class="section-header">
+      <h1>Get Involved</h1>
+      <p>Join us in making an impact — choose how you’d like to contribute.</p>
+    </div>
+  
+    <div class="cards-container">
+      <!-- Donor -->
+      <div class="involve-card">
+        <img src="/images/donation.png" alt="Donor" class="card-img">
+        <h2>Become a Donor</h2>
+        <p>Your contribution helps us support more students and expand our reach.</p>
+        <a href="#"><button class="involve-btn">Donate</button></a>
+      </div>
+  
+      <!-- Partnership -->
+      <div class="involve-card">
+        <img src="/images/partnership.png" alt="Partnership" class="card-img">
+        <h2>Partnership</h2>
+        <p>Collaborate with us to create opportunities, share resources, and grow together.</p>
+        <a href="#"><button class="involve-btn">Partner With Us</button></a>
+      </div>
+  
+      <!-- Volunteer -->
+      <div class="involve-card">
+        <img src="/images/volunteer.png" alt="Volunteer" class="card-img">
+        <h2>Volunteer</h2>
+        <p>Give your time and skills — help us organize events and guide our community.</p>
+        <a href="#"><button class="involve-btn">Volunteer</button></a>
+      </div>
+  
+      <!-- Join Community -->
+      <div class="involve-card">
+        <img src="/images/social.png" alt="Community" class="card-img">
+        <h2>Join Our Community</h2>
+        <p>Connect with like-minded students, share resources, and grow together.</p>
+        <a href="#"><button class="involve-btn">Join Now</button></a>
+      </div>
+    </div>
+  </section>
+  
 
   <!--FOOTER-->
   <footer class="footer">
